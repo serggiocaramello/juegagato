@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juega gato!</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="marcador">
+        <h1>Juega Gato!</h1>
+        <p id="winnerMessage"></p>
+        <div class="marcador__tabla">
+          <p id="firstPlayerMarcador">Jugador: 0</p>
+          <p id="machineMarcador">Máquina: 0</p>
+        </div>
+        <button id="btn-reset">Reiniciar juego</button>
+      </div>
+      <div class="tablero">
+        <span id="line" class="line"></span>
+        <div class="row">
+          <div class="col col-1 row-1 d-1"></div>
+          <div class="col col-2 row-1"></div>
+          <div class="col col-3 row-1 d-2"></div>
+        </div>
+        <div class="row">
+          <div class="col col-1 row-2"></div>
+          <div class="col col-2 row-2 d-1 d-2"></div>
+          <div class="col col-3 row-2"></div>
+        </div>
+        <div class="row">
+          <div class="col col-1 row-3 d-2"></div>
+          <div class="col col-2 row-3"></div>
+          <div class="col col-3 row-3 d-1"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

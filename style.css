@@ -1,0 +1,86 @@
+:root {
+  --text-color: #3d405b;
+  --background-color: #81b29a;
+  --cells-color: #f4f1de;
+  --border-color: #f2cc8f;
+  --btn-color: #e07a5f;
+  --btn-color-hover: #a75d49;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: sans-serif;
+}
+.container {
+  max-width: 30em;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.marcador {
+  background-color: var(--border-color);
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.marcador__tabla {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-color-hover);
+}
+
+.tablero {
+  justify-content: center;
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.line {
+  content: "";
+  background-color: var(--text-color);
+  position: absolute;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--cells-color);
+  border-top: 10px solid var(--border-color);
+  border-left: 10px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.col:last-child {
+  border-right: 10px solid var(--border-color);
+}
+
+.row-3.col {
+  border-bottom: 10px solid var(--border-color);
+}
